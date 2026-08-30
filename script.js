@@ -28,7 +28,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-const NewsApiKey = CONFIG.NEWS_API_KEY;
+
 
 const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
@@ -73,9 +73,9 @@ async function fetchNews(loadMore = false) {
         }
 
 
-        const response = await fetch(
-            `https://api.currentsapi.services/v1/latest-news?apiKey=${NewsApiKey}&language=en&page_number=${currentPage}&page_size=10`
-        );
+       const response = await fetch(
+    `/.netlify/functions/news?endpoint=latest-news&page_number=${currentPage}&page_size=10`
+);
 
 
         if (!response.ok) {
