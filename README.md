@@ -1,4 +1,4 @@
-# NewsHub
+# NewsExplorer
 
 A responsive news website built with HTML, Tailwind CSS, JavaScript, and the Currents News API.
 
