@@ -1,3 +1,3 @@
 [build]
-  command = "echo 'const CONFIG = { NEWS_API_KEY: \"$NEWS_API_KEY\" };' > config.js"
+  command = "echo 'const CONFIG = { NEWS_API_KEY: \"'\"$NEWS_API_KEY\"'\" };' > config.js"
   publish = "."
