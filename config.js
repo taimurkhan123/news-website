@@ -1,3 +1,0 @@
-const CONFIG = {
-  NEWS_API_KEY: "YD5RzkOFhRkCA3P8cwjjgzAEJ1bMJRZ_61NyLNpdqagYLDIg"
-};
