@@ -41,6 +41,8 @@ const sportsLink = document.getElementById("sportsLink");
 const technologyLink = document.getElementById("technologyLink");
 const businessLink = document.getElementById("businessLink");
 
+const NewsApiKey = CONFIG.NEWS_API_KEY;
+
 let currentPage = 1;
 
 
@@ -73,9 +75,8 @@ async function fetchNews(loadMore = false) {
         }
 
 
-       const response = await fetch(
-    `/.netlify/functions/news?endpoint=latest-news&page_number=${currentPage}&page_size=10`
-);
+           const response = await fetch(`https://api.currentsapi.services/v1/latest-news?apiKey=${NewsApiKey}&language=en`);
+           
 
 
         if (!response.ok) {
